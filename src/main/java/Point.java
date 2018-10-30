@@ -8,7 +8,7 @@ public class Point {
 
     // Constructor
 
-    public void pointSwith(int value) {
+    public void pointSwitch(int value) {
 
         switch (value) {
             case 2:
@@ -49,14 +49,55 @@ public class Point {
         }
     }
 
+    public void nameSwitch(int value) {
+
+        switch (value) {
+            case 2:
+                pointName = "Tower";
+                break;
+            case 3:
+                pointName = "Crater";
+                break;
+            case 4:
+                pointName = "Palace Gates";
+                break;
+            case 5:
+                pointName = "Cold Desert";
+                break;
+            case 6:
+                pointName = "Walled City";
+                break;
+            case 7:
+                pointName = "Monastery";
+                break;
+            case 8:
+                pointName = "Black Cave";
+                break;
+            case 9:
+                pointName = "Huts In The Mountain";
+                break;
+            case 10:
+                pointName = "The Werewall";
+                break;
+            case 11:
+                pointName = "The Pit";
+                break;
+            case 12:
+                pointName = "Goldmine";
+                break;
+            default:
+                break;
+        }
+    }
+
 
     //Variables accessible
 
     public int getRafflePoint () {return rafflePoint;}
-    public void setRafflePoint ( int rafflePoint){this.rafflePoint = rafflePoint;}
+    // public void setRafflePoint ( int rafflePoint){this.rafflePoint = rafflePoint;}
 
     public String getPointName () {return pointName;}
-    public void setPointName (String pointName){this.pointName = pointName;}
+    // public void setPointName (String pointName){this.pointName = pointName;}
 
 }
 
