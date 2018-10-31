@@ -6,6 +6,8 @@ import java.io.IOException;
 
 public class Reader {
 
+    Controller settings = new Controller();
+
     public static String print (String field) {
 
         String result = null;
