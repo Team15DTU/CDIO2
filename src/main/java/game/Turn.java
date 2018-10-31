@@ -9,7 +9,7 @@ public class Turn {
 
     private int turnRaffle, turnPoint;
 
-    Point point = new Point();
+    private Point point = new Point();
 
     // Constructor
 
