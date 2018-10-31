@@ -1,7 +1,5 @@
 package player;
 
-import game.Point;
-
 public class Account {
 
     // Fields
@@ -13,24 +11,28 @@ public class Account {
      * Primary Constructor
      */
     public Account () {
+        // Set initial balance to 0
         balance = 0;
     }
 
-    // Properties
-    public void checkBalance (Player player) {
-        balance = player.getAccount();
+    /**
+     * Constructs an Account with an initial balance
+     * @param balance int
+     */
+    public Account (int balance) {
+        this.balance = balance;
     }
+
+    // Properties
 
     public int getBalance () {return balance;}
 
     // Public Methods
 
-    public void add (Player player, Point point) {
+    public void add (int points) {
 
-        beforeScore = player.getAccount();
-        turnPoint = point.getRafflePoint();
-        afterScore = beforeScore + turnPoint;
-        player.setAccount(afterScore);
     }
+
+    // Support Methods
 
 }
