@@ -58,7 +58,7 @@ public class Point {
 
         switch (value) {
             case 2:
-                pointName = Reader.print("field2name");
+                pointName = "field2name";
                 break;
             case 3:
                 pointName = Reader.print("field3name");
