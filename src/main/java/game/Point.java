@@ -1,16 +1,14 @@
 package game;
 
+import language.Reader;
+
 public class Point {
 
-    // Fields
+    // Methods
 
-    private int rafflePoint;
-    private String pointName;
+    public int pointSwitch(int value) {
 
-
-    // Constructor
-
-    public void pointSwitch(int value) {
+        int rafflePoint;
 
         switch (value) {
             case 2:
@@ -47,59 +45,59 @@ public class Point {
                 rafflePoint = (+650);
                 break;
             default:
+                rafflePoint = (-1);
                 break;
         }
+
+        return rafflePoint;
     }
 
-    public void nameSwitch(int value) {
+    public String nameSwitch(int value) {
+
+        String pointName;
 
         switch (value) {
             case 2:
-                pointName = "Tower";
+                pointName = Reader.print("field2name");
                 break;
             case 3:
-                pointName = "Crater";
+                pointName = Reader.print("field3name");
                 break;
             case 4:
-                pointName = "Palace Gates";
+                pointName = Reader.print("field4name");
                 break;
             case 5:
-                pointName = "Cold Desert";
+                pointName = Reader.print("field5name");
                 break;
             case 6:
-                pointName = "Walled City";
+                pointName = Reader.print("field6name");
                 break;
             case 7:
-                pointName = "Monastery";
+                pointName = Reader.print("field7name");
                 break;
             case 8:
-                pointName = "Black Cave";
+                pointName = Reader.print("field8name");
                 break;
             case 9:
-                pointName = "Huts In The Mountain";
+                pointName = Reader.print("field9name");
                 break;
             case 10:
-                pointName = "The Werewall";
+                pointName = Reader.print("field10name");
                 break;
             case 11:
-                pointName = "The Pit";
+                pointName = Reader.print("field11name");
                 break;
             case 12:
-                pointName = "Goldmine";
+                pointName = Reader.print("field12name");
                 break;
             default:
+                pointName = "FEJL i nameswitch";
                 break;
         }
+
+        return pointName;
+
     }
-
-
-    //Variables accessible
-
-    public int getRafflePoint () {return rafflePoint;}
-    // public void setRafflePoint ( int rafflePoint){this.rafflePoint = rafflePoint;}
-
-    public String getPointName () {return pointName;}
-    // public void setPointName (String pointName){this.pointName = pointName;}
 
 }
 
