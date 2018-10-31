@@ -8,6 +8,8 @@ public class Turn {
     // Fields
 
     private int turnRaffle, turnPoint;
+    private Raffle raffleCup;
+    private Player player;
 
     private Point point = new Point();
 
@@ -15,13 +17,12 @@ public class Turn {
 
     public Turn (Raffle raffleCup, Player player) {
 
-        raffleCup.raffle();
-        turnRaffle=raffleCup.getCupRoll();
-
-        point.pointSwitch(turnRaffle);
-        turnPoint= point.getRafflePoint();
+        this.raffleCup = raffleCup;
+        this.player = player;
 
     }
+
+
 
     // Variables accessible
 
