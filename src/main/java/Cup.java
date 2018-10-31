@@ -2,8 +2,14 @@ public class Cup {
 
     private int cupValue;
 
-    Die die1 = new Die();
-    Die die2 = new Die();
+    private Die die1;
+    private Die die2;
+
+    public Cup () {
+
+        die1 = new Die();
+        die2 = new Die();
+    }
 
     public void cupRoll () {
 
@@ -14,6 +20,7 @@ public class Cup {
     }
 
     // Variables accessible
+
 
     public int getCupValue () {return cupValue;}
 
