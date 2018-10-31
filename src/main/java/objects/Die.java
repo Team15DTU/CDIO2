@@ -8,8 +8,23 @@ public class Die {
 
     private int faceValue; // Value of die after roll
     private final int DIESIDES = 6; // Sides on die
+    private int sides;  // Sides for custom sides on die
 
     // Constructor
+
+    public Die () {
+
+        sides=DIESIDES;
+
+    }
+
+    public Die (int sides) {
+
+        this.sides = sides;
+
+    }
+
+    // Methods
 
     public void roll () { //
 
@@ -25,5 +40,8 @@ public class Die {
 
     // public void setFaceValue (int faceValue) {this.faceValue = faceValue; }
 
+    public int getSides() {return sides;}
+
+    public void setSides(int sides) {this.sides = sides;}
 }
 
