@@ -40,5 +40,8 @@ public class Die {
 
     // public void setFaceValue (int faceValue) {this.faceValue = faceValue; }
 
+    public int getSides() {return sides;}
+
+    public void setSides(int sides) {this.sides = sides;}
 }
 
