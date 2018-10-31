@@ -15,6 +15,11 @@ public class Turn {
 
     // Constructor
 
+    /**
+     * Primary constructor
+     * @param raffleCup
+     * @param player
+     */
     public Turn (Raffle raffleCup, Player player) {
         // Initialize object variables
         this.raffleCup = raffleCup;
@@ -32,7 +37,7 @@ public class Turn {
 
     // Public Methods
     public void raffle () {
-        raffleCup.raffle();
+        raffleCup.raffle(); // Roll the dices
     }
 
 }
