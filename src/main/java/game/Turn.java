@@ -18,7 +18,7 @@ public class Turn {
         raffleCup.raffle();
         turnRaffle=raffleCup.getCupRoll();
 
-        point.pointSwith(turnRaffle);
+        point.pointSwitch(turnRaffle);
         turnPoint= point.getRafflePoint();
 
     }
