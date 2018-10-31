@@ -30,7 +30,7 @@ public class Die {
 
         Random generator = new Random();
 
-        faceValue = generator.nextInt(DIESIDES)+1; // Random number om die with DIESIDES
+        faceValue = generator.nextInt(sides)+1; // Random number om die with DIESIDES
 
     }
 
