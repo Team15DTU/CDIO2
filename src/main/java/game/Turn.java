@@ -16,12 +16,11 @@ public class Turn {
     // Constructor
 
     public Turn (Raffle raffleCup, Player player) {
-
+        // Initialize object variables
         this.raffleCup = raffleCup;
         this.player = player;
 
     }
-
 
 
     // Variables accessible
@@ -29,5 +28,11 @@ public class Turn {
     public int getTurnRaffle () {return turnRaffle;}
 
     public int getTurnPoint () {return turnPoint;}
+
+
+    // Public Methods
+    public void raffle () {
+        raffleCup.raffle();
+    }
 
 }
