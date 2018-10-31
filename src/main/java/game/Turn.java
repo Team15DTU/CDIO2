@@ -1,3 +1,8 @@
+package game;
+
+import objects.Raffle;
+import player.Player;
+
 public class Turn {
 
     // Fields
@@ -8,7 +13,7 @@ public class Turn {
 
     // Constructor
 
-    public void turn (Raffle raffleCup, Player player) {
+    public Turn (Raffle raffleCup, Player player) {
 
         raffleCup.raffle();
         turnRaffle=raffleCup.getCupRoll();
