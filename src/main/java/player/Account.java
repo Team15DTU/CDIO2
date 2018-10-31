@@ -1,13 +1,29 @@
 package player;
 
+import game.Point;
+
 public class Account {
 
     // Fields
-
-    private int beforeScore, afterScore,turnPoint;
     private int balance;
 
-    // Constructor
+    // Constructors
+
+    /**
+     * Primary Constructor
+     */
+    public Account () {
+        balance = 0;
+    }
+
+    // Properties
+    public void checkBalance (Player player) {
+        balance = player.getAccount();
+    }
+
+    public int getBalance () {return balance;}
+
+    // Public Methods
 
     public void add (Player player, Point point) {
 
@@ -16,11 +32,5 @@ public class Account {
         afterScore = beforeScore + turnPoint;
         player.setAccount(afterScore);
     }
-
-    public void checkBalance (Player player) {
-        balance = player.getAccount();
-    }
-
-    public int getBalance () {return balance;}
 
 }
