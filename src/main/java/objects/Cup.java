@@ -26,6 +26,6 @@ public class Cup {
 
     public int getCupValue () {return cupValue;}
 
-    // public void setCupValue (int cupValue) {this.cupValue = cupValue;}
+    public void setCupValue (int cupValue) {this.cupValue = cupValue;}
 
 }
