@@ -25,12 +25,19 @@ public class Account {
 
     // Properties
 
-    public int getBalance () {return balance;}
+    public int getBalance () { return balance; }
 
     // Public Methods
 
     public void add (int points) {
+        // add points to balance
+        balance += points;
 
+        // Check if balance is below 0
+        if (balance < 0) {
+            // Then set balance = 0
+            balance = 0;
+        }
     }
 
     // Support Methods
