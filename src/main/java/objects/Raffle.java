@@ -1,3 +1,7 @@
+package objects;
+
+import objects.Cup;
+
 public class Raffle {
 
     // Fields

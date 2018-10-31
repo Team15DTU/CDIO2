@@ -1,3 +1,7 @@
+package player;
+
+import game.Turn;
+
 public class Player {
 
     // Fields

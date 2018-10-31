@@ -1,3 +1,5 @@
+package objects;
+
 import java.util.Random;
 
 public class Die {
@@ -19,7 +21,7 @@ public class Die {
 
     // Make values accessible
 
-    public int getFaceValue () {return faceValue; }
+    public int getFaceValue () { return faceValue; }
 
     // public void setFaceValue (int faceValue) {this.faceValue = faceValue; }
 
