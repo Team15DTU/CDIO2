@@ -10,27 +10,32 @@ public class Die {
     private final int DIESIDES = 6; // Sides on die
     private int sides;  // Sides for custom sides on die
 
-    // Constructor
+    // Constructors
 
+    /**
+     * Default constructor, which creates a Die with 6 sides
+     */
     public Die () {
 
         sides=DIESIDES;
-
     }
 
+    /**
+     * Alternate constructor, which creates a Die with "sides" amount of sides
+     * @param sides int
+     */
     public Die (int sides) {
 
         this.sides = sides;
-
     }
 
-    // Methods
+    // Public Methods
 
     public void roll () { //
 
         Random generator = new Random();
 
-        faceValue = generator.nextInt(DIESIDES)+1; // Random number om die with DIESIDES
+        faceValue = generator.nextInt(sides)+1; // Random number om die with DIESIDES
 
     }
 
