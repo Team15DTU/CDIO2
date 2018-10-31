@@ -8,25 +8,36 @@ public class Turn {
     // Fields
 
     private int turnRaffle, turnPoint;
+    private Raffle raffleCup;
+    private Player player;
 
-    Point point = new Point();
+    private Point point = new Point();
 
     // Constructor
 
+    /**
+     * Primary constructor
+     * @param raffleCup
+     * @param player
+     */
     public Turn (Raffle raffleCup, Player player) {
-
-        raffleCup.raffle();
-        turnRaffle=raffleCup.getCupRoll();
-
-        point.pointSwith(turnRaffle);
-        turnPoint= point.getRafflePoint();
+        // Initialize object variables
+        this.raffleCup = raffleCup;
+        this.player = player;
 
     }
+
 
     // Variables accessible
 
     public int getTurnRaffle () {return turnRaffle;}
 
     public int getTurnPoint () {return turnPoint;}
+
+
+    // Public Methods
+    public void raffle () {
+        raffleCup.raffle(); // Roll the dices
+    }
 
 }
