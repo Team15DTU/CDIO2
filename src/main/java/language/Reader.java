@@ -6,14 +6,27 @@ import java.io.IOException;
 
 public class Reader {
 
-    Controller settings = new Controller();
+    Controller control = new Controller();
+    Language land = new Language();
+    static String controlFileName;
 
-    public static String print (String field) {
+    static String selectedLanguage = "DK.txt";
+
+
+    public String Reader () {
+
+        selectedLanguage = control.getFileName();
+
+        return selectedLanguage;
+
+    }
+
+    public static String print(String field) {
 
         String result = null;
 
         try {
-            FileReader fr = new FileReader("ENG.txt");
+            FileReader fr = new FileReader(selectedLanguage);
             BufferedReader br = new BufferedReader(fr);
 
             String str;
@@ -28,6 +41,21 @@ public class Reader {
             System.out.println("Fejl");
         }
         return result;
+    }
+    public static String getSelectedLanguage() {
+        return selectedLanguage;
+    }
+
+    public static void setSelectedLanguage(String selectedLanguage) {
+        Reader.selectedLanguage = selectedLanguage;
+    }
+
+    public static String getControlFileName() {
+        return controlFileName;
+    }
+
+    public static void setControlFileName(String controlFileName) {
+        Reader.controlFileName = controlFileName;
     }
 }
 
