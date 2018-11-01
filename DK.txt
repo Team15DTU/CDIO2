@@ -1,6 +1,6 @@
 ---- operations ----
 selectLanguage
-Vaelg Sprog:
+Vælg Sprog
 selectedLanguage
 Valgt Sprog:
 ENG
@@ -8,7 +8,7 @@ Engelsk
 DK
 Dansk
 languageError
-Det Oenskede Sporg Understoettes ikke.
+Det ønskede sporg understøttes ikke.
 fileError
 FEJL: Ingen language.txt blev fundet.
 
@@ -16,13 +16,13 @@ FEJL: Ingen language.txt blev fundet.
 ---- field names ----
 
 field2name
-Taarnet
+Tårnet
 field3name
 Krateret
 field4name
 Paladsets Port
 field5name
-Den Kolde Oarken
+Den Kolde Ørken
 field6name
 Den Murrede By
 field7name
