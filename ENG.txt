@@ -1,3 +1,20 @@
+---- operations ----
+selectLanguage
+Select Language:
+selectedLanguage
+Your selected:
+ENG
+English
+DK
+Danish
+languageError
+The requested language is not support
+fileError
+Error: No language.txt file found
+
+
+---- field names ----
+
 field2name
 Tower
 field3name

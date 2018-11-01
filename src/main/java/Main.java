@@ -1,8 +1,11 @@
 import game.Point;
+import language.Controller;
 import language.Reader;
 import objects.Cup;
 
 import java.io.IOException;
+import java.sql.SQLOutput;
+import java.util.Scanner;
 
 /**
  * @author Karl Emil Jeppesen
@@ -12,18 +15,34 @@ import java.io.IOException;
  */
 public class Main {
 
-    public static void main (String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
 
-        Cup cup = new Cup();
-        cup.setCupValue(2); // Bare for at sikre jeg slår 2
-        int raffle = cup.cupRoll();
+        Controller control = new Controller();
+        String language;
+        String fileName;
+
+        for (int i =1; i<5; i++) {
+            Controller.selectorWindow();
+
+            if (control.fileName() != Reader.getSelectedLanguage()) {
+                Reader.setSelectedLanguage(control.getFileName());
+            }
+            fileName = control.getFileName();
+            language = control.language();
 
 
-        Point point = new Point();
-        String turnField = point.nameSwitch(raffle);
+            System.out.println(Reader.print("selectedLanguage") + Reader.print(language));
 
-        System.out.println(Reader.print(turnField));
+
+            Cup cup = new Cup();
+            int raffle = cup.cupRoll();
+
+            Point point = new Point();
+            String turnField = point.nameSwitch(raffle);
+
+            System.out.println(Reader.print(turnField));
+
+        }
 
     }
-
 }

@@ -4,28 +4,71 @@ import java.util.Scanner;
 
 public class Controller {
 
+    Language land = new Language();
+    private static String fileName;
+    private static String language;
 
-    public Controller () {
+    private static int input;
+
+
+    public static int selectorWindow() {
 
         Scanner scan = new Scanner(System.in);
 
-        System.out.println(Reader.print("SelectLanguage"));
+        System.out.println(Reader.print("selectLanguage"));
+        System.out.println("1 - " + Reader.print("DK"));
+        System.out.println("2 - " + Reader.print("ENG"));
+
+        input=scan.nextInt();
+
+        return input;
     }
 
-    public String languageSwitch (int landCode) {
+    public String language () {
 
-        String languageCode;
+        language = land.languageSwitch(input);
+        return language;
+    }
 
-        switch (landCode) {
-            case 1:
-                languageCode = "DK";
-                break;
-            case 2:
-                languageCode = "ENG";
-                break;
-            default:
-                languageCode = "The requested language is not support";
-                break;
-        }
+    public String fileName () {
+
+        fileName=land.fileSwitch(input);
+        return fileName;
+
+    }
+
+    public void Control () {
+
+    }
+
+    public String getFileName() {
+        return fileName;
+    }
+
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
+    }
+
+    public Language getLand() {
+        return land;
+    }
+
+    public void setLand(Language land) {
+        this.land = land;
+    }
+
+    public static int getInput() {
+        return input;
+    }
+
+    public static void setInput(int input) {
+        Controller.input = input;}
+
+    public static String getLanguage() {
+        return language;
+    }
+
+    public static void setLanguage(String language) {
+        Controller.language = language;
     }
 }
