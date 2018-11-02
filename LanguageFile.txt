@@ -1,0 +1,43 @@
+﻿---- LANGUAGE ----
+* FileName: LanguageFile.txt
+* Language: 
+
+---- operations ----
+selectLanguage
+
+selectedLanguage
+
+ENG
+
+DK
+
+languageError
+
+fileError
+
+
+
+---- field names ----
+
+field2name
+
+field3name
+
+field4name
+
+field5name
+
+field6name
+
+field7name
+
+field8name
+
+field9name
+
+field10name
+
+field11name
+
+field12name
+

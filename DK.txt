@@ -1,4 +1,9 @@
+﻿---- LANGUAGE ----
+* FileName: DK.txt
+* Language: Danish
+
 ---- operations ----
+
 selectLanguage
 Vælg Sprog
 selectedLanguage

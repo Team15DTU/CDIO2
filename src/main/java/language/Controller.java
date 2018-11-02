@@ -11,7 +11,6 @@ public class Controller {
 
     private static int input;
 
-
     public static int selectorWindow() {
 
         Scanner scan = new Scanner(System.in);
@@ -20,31 +19,33 @@ public class Controller {
         System.out.println("1 - " + Reader.print("DK"));
         System.out.println("2 - " + Reader.print("ENG"));
 
-        input=scan.nextInt();
+        input = scan.nextInt();
 
         return input;
     }
 
-    public String language () {
+    public String language() {
 
         language = land.languageSwitch(input);
         return language;
     }
 
-    public String fileName () {
+    public String fileName() {
 
-        fileName=land.fileSwitch(input);
+        fileName = land.fileSwitch(input);
         return fileName;
 
     }
 
     public void languageUpdate() {
+
         Reader.setSelectedLanguage(fileName());
+
     }
 
-    public String getFileName() {
-        return fileName;
-    }
+    // Variables Setters and Getters
+
+    public String getFileName(){return fileName;}
 
     public void setFileName(String fileName) {
         this.fileName = fileName;
@@ -63,7 +64,8 @@ public class Controller {
     }
 
     public static void setInput(int input) {
-        Controller.input = input;}
+        Controller.input = input;
+    }
 
     public static String getLanguage() {
         return language;
@@ -72,4 +74,5 @@ public class Controller {
     public static void setLanguage(String language) {
         Controller.language = language;
     }
+
 }

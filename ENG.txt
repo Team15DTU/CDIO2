@@ -1,3 +1,7 @@
+---- LANGUAGE ----
+* FileName: ENG.txt
+* Language: English
+
 ---- operations ----
 selectLanguage
 Select Language:
