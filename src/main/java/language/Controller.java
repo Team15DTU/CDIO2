@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Controller {
 
     Language land = new Language();
+
     private static String fileName;
     private static String language;
 
@@ -37,8 +38,8 @@ public class Controller {
 
     }
 
-    public void Control () {
-
+    public void languageUpdate() {
+        Reader.setSelectedLanguage(fileName());
     }
 
     public String getFileName() {

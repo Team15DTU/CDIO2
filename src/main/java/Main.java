@@ -4,8 +4,6 @@ import language.Reader;
 import objects.Cup;
 
 import java.io.IOException;
-import java.sql.SQLOutput;
-import java.util.Scanner;
 
 /**
  * @author Karl Emil Jeppesen
@@ -23,10 +21,8 @@ public class Main {
 
         for (int i =1; i<5; i++) {
             Controller.selectorWindow();
+            control.languageUpdate();
 
-            if (control.fileName() != Reader.getSelectedLanguage()) {
-                Reader.setSelectedLanguage(control.getFileName());
-            }
             fileName = control.getFileName();
             language = control.language();
 
