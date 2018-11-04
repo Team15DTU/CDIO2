@@ -2,10 +2,14 @@ package player;
 
 public class Account {
 
-    // Fields
+    /*
+     ------------ Fields ------------------
+      */
     private int balance;
 
-    // Constructors
+    /*
+    ----------- Constructors --------------
+     */
 
     /**
      * Primary Constructor
@@ -23,14 +27,18 @@ public class Account {
         this.balance = balance;
     }
 
-    // Properties
+    /*
+    ------------ Properties ------------
+     */
 
     public int getBalance () { return balance; }
 
-    // Public Methods
+    /*
+     --------- Public Methods ----------
+      */
 
-    public void add (int points) {
-        // add points to balance
+    public void update(int points) {
+        // update points to balance
         balance += points;
 
         // Check if balance is below 0
@@ -40,6 +48,8 @@ public class Account {
         }
     }
 
-    // Support Methods
+    /*
+     ---------- Support Methods -----------
+      */
 
 }
