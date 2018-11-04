@@ -7,7 +7,7 @@ public class Player {
     // Fields
 
     private String name;
-    private int account;
+    private Account account;
     private boolean hasWon=false;
 
     // Constructor
