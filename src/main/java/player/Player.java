@@ -4,26 +4,50 @@ import game.Turn;
 
 public class Player {
 
-    // Fields
+    /*
+     --------- Fields ---------------
+      */
 
     private String name;
-    private int account;
+    private Account account;
     private boolean hasWon=false;
 
-    // Constructor
+    /*
+     ------- Constructors ------------
+      */
 
-    public void updateScore(Turn turn1, Account account) {
 
-        int turnpoint =turn1.getTurnPoint();
+    /*
+    -------- Public Methods ----------
+     */
 
+    public void updateScore() { }
+
+    /*
+    ------- Support Methods ----------
+     */
+
+
+    /*
+     ------ Variable accessible ------
+      */
+
+    public Account getAccount()  {return account; }
+
+    public void setAccount(Account account) { this.account = account; }
+
+    public String getName() {
+        return name; }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
+    public boolean isHasWon() {
+        return hasWon;
+    }
 
-    // Variable accessible
-
-    public int getAccount() {return account;}
-    public void setAccount(int account) {this.account = account;}
-
-
-
+    public void setHasWon(boolean hasWon) {
+        this.hasWon = hasWon;
+    }
 }
