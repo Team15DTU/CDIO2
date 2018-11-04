@@ -10,11 +10,31 @@ public class Player {
 
     private String name;
     private Account account;
-    private boolean hasWon=false;
+    private boolean hasWon = false;
 
     /*
      ------- Constructors ------------
       */
+
+    /**
+     * Default constructor
+     */
+    public Player ( String name ) {
+        // Initialize
+        this.name = name;
+        account = new Account();
+    }
+
+    /**
+     *
+     * @param name String
+     * @param initialBalance int
+     */
+    public Player ( String name, int initialBalance ) {
+        // Initialize
+        this.name = name;
+        account = new Account(initialBalance);
+    }
 
 
     /*
