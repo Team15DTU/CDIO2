@@ -4,15 +4,17 @@ import static org.junit.Assert.*;
 
 public class DieTest {
 
+    // Testing object for conventional dice
+    Die die = new Die();
+    // Testing object for 12 sided dice
+    Die die12 = new Die(12);
+
     @org.junit.Test
     public void roll() {
     }
 
     @org.junit.Test
     public void getFaceValue() {
-
-        // Create a Die with 6 sides
-        Die die = new Die();
 
         // Set expectations
         int faceValue = 1;
@@ -25,9 +27,6 @@ public class DieTest {
     @org.junit.Test
     public void setFaceValue() {
 
-        // Create a Die with 6 sides
-        Die die = new Die();
-
         // Set expectations
         int faceValue = 5;
         die.setFaceValue(faceValue);
@@ -38,6 +37,7 @@ public class DieTest {
 
     @org.junit.Test
     public void getSides() {
+        assertEquals( 12, die12.getSides() );
     }
 
     @org.junit.Test
