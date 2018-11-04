@@ -21,7 +21,10 @@ public class Player {
     -------- Public Methods ----------
      */
 
-    public void updateScore() { }
+    public void updateScore( int score ) {
+        // Update the account associated with the player
+        account.update(score);
+    }
 
     /*
     ------- Support Methods ----------
