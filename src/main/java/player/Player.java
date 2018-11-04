@@ -26,7 +26,7 @@ public class Player {
     }
 
     /**
-     *
+     * Alternative constructor
      * @param name String
      * @param initialBalance int
      */
