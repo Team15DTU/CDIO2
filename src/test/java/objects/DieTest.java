@@ -24,6 +24,16 @@ public class DieTest {
 
     @org.junit.Test
     public void setFaceValue() {
+
+        // Create a Die with 6 sides
+        Die die = new Die();
+
+        // Set expectations
+        int faceValue = 5;
+        die.setFaceValue(faceValue);
+
+        // Test it
+        assertEquals( faceValue, die.getFaceValue() );
     }
 
     @org.junit.Test
