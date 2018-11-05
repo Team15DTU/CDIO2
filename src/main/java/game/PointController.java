@@ -1,12 +1,20 @@
 package game;
 
 import language.Reader;
+import player.Player;
 
 public class PointController {
 
     // Methods
 
+    public void (Player player, int points) {
+        player.updateScore(points);
 
+        if (player.getAccount().getBalance() < 0) {
+            player.resetScore();
+        }
+        System.out.println("Din konto er nulstillet");
+    }
 
     public String nameSwitch(int value) {
 
