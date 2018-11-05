@@ -1,3 +1,5 @@
+import game.Game;
+
 /**
  * @author Karl Emil Jeppesen
  * StudyID: s180557
@@ -8,8 +10,8 @@ public class Main {
 
     public static void main (String[] args) {
 
-        //spil spillet
-        //dev branch oprettet
+        Game game = new Game();
+        game.launch();
 
     }
 
