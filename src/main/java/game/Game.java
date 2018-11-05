@@ -42,10 +42,10 @@ public class Game {
                 }
             }
 
+
             if (player1.getAccount().getBalance() > player2.getAccount().getBalance()) {
                 System.out.println("Tillykke"+player1.getName());
             } else
             System.out.println("Tillykke"+player2.getName());
     }
-
 }

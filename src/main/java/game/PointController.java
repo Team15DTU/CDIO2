@@ -22,40 +22,40 @@ public class PointController {
 
         switch (value) {
             case 2:
-                pointName = Reader.print("field2name");
+                pointName = "field2name";
                 break;
             case 3:
-                pointName = Reader.print("field3name");
+                pointName = "field3name";
                 break;
             case 4:
-                pointName = Reader.print("field4name");
+                pointName = "field4name";
                 break;
             case 5:
-                pointName = Reader.print("field5name");
+                pointName = "field5name";
                 break;
             case 6:
-                pointName = Reader.print("field6name");
+                pointName = "field6name";
                 break;
             case 7:
-                pointName = Reader.print("field7name");
+                pointName = "field7name";
                 break;
             case 8:
-                pointName = Reader.print("field8name");
+                pointName = "field8name";
                 break;
             case 9:
-                pointName = Reader.print("field9name");
+                pointName = "field9name";
                 break;
             case 10:
-                pointName = Reader.print("field10name");
+                pointName = "field10name";
                 break;
             case 11:
-                pointName = Reader.print("field11name");
+                pointName = "field11name";
                 break;
             case 12:
-                pointName = Reader.print("field12name");
+                pointName = "field12name";
                 break;
             default:
-                pointName = "FEJL i nameswitch";
+                pointName = "feildError";
                 break;
         }
 

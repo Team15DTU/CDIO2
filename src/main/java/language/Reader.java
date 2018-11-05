@@ -6,12 +6,14 @@ import java.io.IOException;
 
 public class Reader {
 
-    public static String print (String field) {
+    static String selectedLanguage = "DK.txt";
+
+    public static String print(String field) {
 
         String result = null;
 
         try {
-            FileReader fr = new FileReader("ENG.txt");
+            FileReader fr = new FileReader(selectedLanguage);
             BufferedReader br = new BufferedReader(fr);
 
             String str;
@@ -23,9 +25,17 @@ public class Reader {
             }
         } catch (IOException e) {
 
-            System.out.println("Fejl");
+            System.out.println("fileError");
         }
         return result;
     }
-}
 
+    public static String getSelectedLanguage() {
+        return selectedLanguage;
+    }
+
+    public static void setSelectedLanguage(String selectedLanguage) {
+        Reader.selectedLanguage = selectedLanguage;
+    }
+
+}
