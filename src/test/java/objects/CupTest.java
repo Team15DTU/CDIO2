@@ -10,6 +10,10 @@ import static org.junit.Assert.*;
  */
 public class CupTest {
 
+    // Cup with 2 conventional 6 sided dies
+    Cup cup = new Cup();
+    // Cup with 4, 12 sided dies
+    Cup cup12 = new Cup(4, 12);
 
 
     @Test
