@@ -1,6 +1,7 @@
 package game;
 
 import language.Controller;
+import language.Reader;
 import objects.Cup;
 import player.Player;
 
@@ -22,15 +23,15 @@ public class Game {
     public void launch () {
         Controller.selectorWindow();
 
-        System.out.println("Indtast navn");
+        System.out.println(Reader.print("enterName"));
         String navn = scanner.next();
         Player player1 = new Player(navn, STARTPOINT);
 
-        System.out.println("Indtast navn");
+        System.out.println(Reader.print("enterName"));
         navn = scanner.next();
         Player player2 = new Player(navn, STARTPOINT);
 
-        System.out.println("Welcome string");
+        System.out.println(Reader.print("welcomeToGame"));
 
         Cup cup = new Cup();
 
@@ -46,8 +47,11 @@ public class Game {
 
 
             if (player1.getAccount().getBalance() > player2.getAccount().getBalance()) {
-                System.out.println("Tillykke"+player1.getName());
-            } else
-            System.out.println("Tillykke"+player2.getName());
+                System.out.println(Reader.print("congrats") + " " +player1.getName());
+                System.out.print(Reader.print("theEnding"));
+            } else {
+                System.out.println(Reader.print("congrats") + " " + player2.getName());
+                System.out.print(Reader.print("theEnding"));
+            }
     }
 }

@@ -3,6 +3,14 @@
 * Language: English
 
 ---- operations ----
+
+enterName
+Enter your name
+welcomeToGame
+Welcome to the adventurous country of Dutterland. Get ready to discover this marvelous country
+congrats
+Congratulations
+theEnding
 selectLanguage
 Select Language:
 selectedLanguage
@@ -15,6 +23,20 @@ languageError
 The requested language is not support
 fileError
 Error: No language.txt file found
+
+---- Turn Lines -----
+
+rollPress
+Press r to raffle cup for
+rolled
+You rolled:
+landed
+ and landed on
+
+pointName
+ Gold
+totalScore
+Now you have a total of
 
 
 ---- field names ----
@@ -41,3 +63,28 @@ field11name
 The Pit
 field12name
 Goldmine
+
+---- field Description ----
+
+field2description
+You found a treasure in the tower and sell it for 250 gold!
+field3description
+You barely avoid falling into a crater, but lost 100 gold.
+field4description
+You plunder a palace and sell the valuables for 100 gold.
+field5description
+Your journey led you into an ice desert, the desert people show you the way back agien for 20 gold.
+field6description
+You coming across a city behind a giant wall, you recive 180 gold in tribute to your journey.
+field7description
+You arrive at a monastery, but they were plundered few hours ago and nothing left for you.
+field8description
+Your seeking shelter in a dark cave, but suddenly realize the cave is haunted and run as fast as posible out, losing 70 gold in the rush.
+field9description
+You claiming the mountain and find the original mountain people, and start to plunder them for all the valuables. You go on with 60 gold more and a smiley of joy.
+field10description
+You walking along a huge wall, suddenly 4 humanoid dogs are chasing you. in the run you lose 80 gold, but are allready on the road for a new place.
+field11description
+You find a hughe hole and choice to play around the edge, suddenly you fall into it but grab the edge, while pulling your self up you drop 50 gold from your pocket.
+field12description
+You find alot of gold miners in a rich mine, and steal every thing the gathered. your leaving the miners crying while you walking away whisteling and 650 gold richer.
