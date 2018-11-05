@@ -1,5 +1,6 @@
 package game;
 
+import language.Controller;
 import objects.Cup;
 import player.Player;
 
@@ -16,7 +17,7 @@ public class Game {
     Scanner scanner = new Scanner(System.in);
 
     public Game () {
-        //Language controller
+        Controller.selectorWindow();
 
         final int STARTPOINT = 1000;
         final int WINNINGPOINTS = 3000;
@@ -33,6 +34,8 @@ public class Game {
 
         Cup cup = new Cup();
 
+
+        // turn needs to only take in player and cup
         Turn turn = new Turn();
 
             while (!player1.isHasWon() && !player2.isHasWon()) {
