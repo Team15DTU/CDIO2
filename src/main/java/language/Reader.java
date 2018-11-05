@@ -6,14 +6,14 @@ import java.io.IOException;
 
 public class Reader {
 
-    static String selectedLanguage = "DK.txt";
+    static String selectedLanguage = "ENG.txt";
 
     public static String print(String field) {
 
         String result = null;
 
         try {
-            FileReader fr = new FileReader(selectedLanguage);
+            FileReader fr = new FileReader( "src\\main\\resources\\" + selectedLanguage);
             BufferedReader br = new BufferedReader(fr);
 
             String str;

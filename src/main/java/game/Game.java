@@ -16,11 +16,11 @@ public class Game {
 
     Scanner scanner = new Scanner(System.in);
 
-    public Game () {
-        Controller.selectorWindow();
+    final static int STARTPOINT = 1000;
+    final static int WINNINGPOINTS = 3000;
 
-        final int STARTPOINT = 1000;
-        final int WINNINGPOINTS = 3000;
+    public void launch () {
+        Controller.selectorWindow();
 
         System.out.println("Indtast navn");
         String navn = scanner.next();
@@ -34,14 +34,13 @@ public class Game {
 
         Cup cup = new Cup();
 
-
         // turn needs to only take in player and cup
-        Turn turn = new Turn();
+        Turn GameTurn = new Turn();
 
             while (!player1.isHasWon() && !player2.isHasWon()) {
-                turn(player1, cup);
+                GameTurn.turn(player1, cup);
                 if (!player1.isHasWon()) {
-                    turn(player2, cup);
+                    GameTurn.turn(player2, cup);
                 }
             }
 

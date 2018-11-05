@@ -21,9 +21,16 @@ public class Cup {
         dies = new Die[2];
 
         // Fill the array with 2 dies
-        for (Die die : dies) {
-            die = new Die();
+        for( int i=0 ; i < dies.length ; i++) {
+            dies[i] = new Die();
         }
+
+        /*
+        for (Die die : dies) {
+
+            die = new Die();
+        } */
+
     }
 
     /**

@@ -7,13 +7,14 @@ public class PointController {
 
     // Methods
 
-    public static void reset(Player player, int points) {
+    public static void add (Player player, int points) {
         player.updateScore(points);
 
         if (player.getAccount().getBalance() < 0) {
             player.resetScore();
+            System.out.println("Din konto er nulstillet");
         }
-        System.out.println("Din konto er nulstillet");
+
     }
 
 }

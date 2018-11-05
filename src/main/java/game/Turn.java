@@ -2,6 +2,7 @@ package game;
 
 import objects.CupController;
 import player.Player;
+import objects.Cup;
 
 import java.util.Scanner;
 
@@ -9,29 +10,40 @@ public class Turn {
 
     // Fields
 
-    private int rollValue, turnPoint;
+    private int rollValue, turnPoint, totalScore;
+
+    String input;
 
     Scanner scanner = new Scanner(System.in);
 
-    private PointController pointController = new PointController();
-
     // Constructor
 
-    /**
-     * Primary constructor
-     * @param cupControllerCup CupController
-     * @param player Player
-     */
-    public Turn (CupController cupControllerCup, Player player) {
-        // Initialize object variables
-        this.cupControllerCup = cupControllerCup;
-        this.player = player;
+
+    public void turn (Player player, Cup cup) {
+        // Initialize object variable
+
 
         System.out.println("Press enter to roll cup for "+player.getName());
-        scanner.next();
-        //DETTE ER DET NYESTE
+        input=scanner.next();
 
+        cup.cupRoll();
+        rollValue=cup.getCupValue();
 
+        turnPoint=pointSwitch(rollValue);
+
+        PointController.add(player,turnPoint);
+        totalScore=player.getAccount().getBalance();
+
+        System.out.print("Your rolled:" + rollValue +"\t Which gives you:" + turnPoint + " point\n");
+        System.out.println("and a total score of: " + totalScore + " points");
+
+        if (totalScore > Game.WINNINGPOINTS) {
+            player.setHasWon(true);
+        }
+
+        if (rollValue == 10) {
+            turn(player,cup);
+        }
 
     }
 
@@ -44,9 +56,6 @@ public class Turn {
 
 
     // Public Methods
-    public void raffle () {
-        cupControllerCup.raffle(); // Roll the dices
-    }
 
     public int pointSwitch(int value) {
 

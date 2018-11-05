@@ -44,16 +44,6 @@ public class Account {
     public void update(int points) {
         // update points to balance
         balance += points;
-
-        // Check if balance is below 0
-        if (balance < 0) {
-            // Then set balance = 0
-            balance = 0;
-        }
     }
-
-    /*
-     ---------- Support Methods -----------
-      */
-
 }
+
