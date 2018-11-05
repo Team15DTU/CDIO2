@@ -3,13 +3,16 @@ package game;
 import objects.CupController;
 import player.Player;
 
+import java.util.Scanner;
+
 public class Turn {
 
     // Fields
 
-    private int turnRaffle, turnPoint;
+    private int rollValue, turnPoint;
     private CupController cupControllerCup;
     private Player player;
+    Scanner scanner = new Scanner(System.in);
 
     private PointController pointController = new PointController();
 
@@ -25,12 +28,18 @@ public class Turn {
         this.cupControllerCup = cupControllerCup;
         this.player = player;
 
+        System.out.println("Press enter to roll cup for "+player.getName());
+        scanner.next();
+        //DETTE ER DET NYESTE
+
+
+
     }
 
 
     // Variables accessible
 
-    public int getTurnRaffle () {return turnRaffle;}
+    public int getRollValue() {return rollValue;}
 
     public int getTurnPoint () {return turnPoint;}
 

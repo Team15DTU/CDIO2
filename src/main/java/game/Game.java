@@ -35,27 +35,20 @@ public class Game {
 
         Turn turn = new Turn();
 
-        turns();
-
-        announceWinner();
-
-    }
-
-    public void turns (){
-        while (player1.getAccount().getBalance() < WINNINGPOINTS && player2.getAccount().getBalance() < WINNINGPOINTS) {
-            turn(player1, cup);
-            if (player1.getAccount().getBalance() < WINNINGPOINTS) {
-                turn(player2, cup);
+        //Turns alternation
+            while (player1.getAccount().getBalance() < WINNINGPOINTS && player2.getAccount().getBalance() < WINNINGPOINTS) {
+                turn(player1, cup);
+                if (player1.getAccount().getBalance() < WINNINGPOINTS) {
+                    turn(player2, cup);
+                }
             }
-        }
-    }
 
-    public void announceWinner (player1, player2) {
-        if (player1.getAccount().getBalance() > player2.getAccount().getBalance()) {
-            System.out.println("Tillykke"+player1.getName());
-        }
-        System.out.println("Tillykke"+player2.getName());
-
+        //Announce winner
+            if (player1.getAccount().getBalance() > player2.getAccount().getBalance()) {
+                System.out.println("Tillykke"+player1.getName());
+            }
+            System.out.println("Tillykke"+player2.getName());
 
     }
+
 }
