@@ -1,9 +1,4 @@
-import game.Point;
-import language.Controller;
-import language.Reader;
-import objects.Cup;
-
-import java.io.IOException;
+import game.Game;
 
 /**
  * @author Karl Emil Jeppesen
@@ -13,32 +8,11 @@ import java.io.IOException;
  */
 public class Main {
 
-    public static void main(String[] args) throws IOException {
+    public static void main (String[] args) {
 
-        Controller control = new Controller();
-        String language;
-        String fileName;
-
-        for (int i =1; i<5; i++) {
-            Controller.selectorWindow();
-            control.languageUpdate();
-
-            fileName = control.getFileName();
-            language = control.language();
-
-
-            System.out.println(Reader.print("selectedLanguage") + Reader.print(language));
-
-
-            Cup cup = new Cup();
-            int raffle = cup.cupRoll();
-
-            Point point = new Point();
-            String turnField = point.nameSwitch(raffle);
-
-            System.out.println(Reader.print(turnField));
-
-        }
+        Game game = new Game();
+        game.launch();
 
     }
+
 }

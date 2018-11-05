@@ -1,55 +1,19 @@
 package game;
 
 import language.Reader;
+import player.Player;
 
-public class Point {
+public class PointController {
 
     // Methods
 
-    public int pointSwitch(int value) {
+    public void (Player player, int points) {
+        player.updateScore(points);
 
-        int rafflePoint;
-
-        switch (value) {
-            case 2:
-                rafflePoint = (+250);
-                break;
-            case 3:
-                rafflePoint = (-100);
-                break;
-            case 4:
-                rafflePoint = (+100);
-                break;
-            case 5:
-                rafflePoint = (-20);
-                break;
-            case 6:
-                rafflePoint = (+180);
-                break;
-            case 7:
-                rafflePoint = (0);
-                break;
-            case 8:
-                rafflePoint = (-70);
-                break;
-            case 9:
-                rafflePoint = (+60);
-                break;
-            case 10:
-                rafflePoint = (-80);
-                break;
-            case 11:
-                rafflePoint = (-50);
-                break;
-            case 12:
-                rafflePoint = (+650);
-                break;
-            default:
-                rafflePoint = (-1);
-                break;
+        if (player.getAccount().getBalance() < 0) {
+            player.resetScore();
         }
-
-        return rafflePoint;
+        System.out.println("Din konto er nulstillet");
     }
 
     public String nameSwitch(int value) {
