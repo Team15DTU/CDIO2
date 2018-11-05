@@ -1,6 +1,6 @@
 package game;
 
-import objects.Raffle;
+import objects.CupController;
 import player.Player;
 
 public class Turn {
@@ -8,21 +8,21 @@ public class Turn {
     // Fields
 
     private int turnRaffle, turnPoint;
-    private Raffle raffleCup;
+    private CupController cupControllerCup;
     private Player player;
 
-    private Point point = new Point();
+    private PointController pointController = new PointController();
 
     // Constructor
 
     /**
      * Primary constructor
-     * @param raffleCup
-     * @param player
+     * @param cupControllerCup CupController
+     * @param player Player
      */
-    public Turn (Raffle raffleCup, Player player) {
+    public Turn (CupController cupControllerCup, Player player) {
         // Initialize object variables
-        this.raffleCup = raffleCup;
+        this.cupControllerCup = cupControllerCup;
         this.player = player;
 
     }
@@ -37,7 +37,53 @@ public class Turn {
 
     // Public Methods
     public void raffle () {
-        raffleCup.raffle(); // Roll the dices
+        cupControllerCup.raffle(); // Roll the dices
+    }
+
+    public int pointSwitch(int value) {
+
+        int rafflePoint;
+
+        switch (value) {
+            case 2:
+                rafflePoint = (+250);
+                break;
+            case 3:
+                rafflePoint = (-100);
+                break;
+            case 4:
+                rafflePoint = (+100);
+                break;
+            case 5:
+                rafflePoint = (-20);
+                break;
+            case 6:
+                rafflePoint = (+180);
+                break;
+            case 7:
+                rafflePoint = (0);
+                break;
+            case 8:
+                rafflePoint = (-70);
+                break;
+            case 9:
+                rafflePoint = (+60);
+                break;
+            case 10:
+                rafflePoint = (-80);
+                break;
+            case 11:
+                rafflePoint = (-50);
+                break;
+            case 12:
+                rafflePoint = (+650);
+                break;
+            default:
+                rafflePoint = (-1);
+                break;
+        }
+
+        return rafflePoint;
     }
 
 }

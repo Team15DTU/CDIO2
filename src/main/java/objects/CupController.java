@@ -2,15 +2,13 @@ package objects;
 
 import objects.Cup;
 
-public class Raffle {
+public class CupController {
 
     // Fields
 
-    private int cupRoll, raffleScore;
+    private int cupRoll;
 
-    Cup cup = new Cup();
-
-    public void raffle () {
+    public void raffle (Cup cup) {
 
         cup.cupRoll();
 

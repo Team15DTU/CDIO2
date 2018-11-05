@@ -1,5 +1,7 @@
 package game;
 
+import objects.Cup;
+
 /**
  * @author Karl Emil Jeppesen
  * StudyID: s180557
@@ -7,4 +9,9 @@ package game;
  * University: DTU
  */
 public class Game {
+
+    Cup cup = new Cup();
+
+
+
 }
