@@ -39,14 +39,6 @@ public class CupTest {
     }
 
     @Test
-    public void getDies() {
-    }
-
-    @Test
-    public void setDies() {
-    }
-
-    @Test
     public void getCupValue() {
     }
 
