@@ -6,9 +6,9 @@ public class CupController {
 
     // Fields
 
-    private int cupRoll;
+    private static int cupRoll;
 
-    public void raffle (Cup cup) {
+    public static void raffle (Cup cup) {
 
         cup.cupRoll();
 

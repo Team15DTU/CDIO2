@@ -10,8 +10,7 @@ public class Turn {
     // Fields
 
     private int rollValue, turnPoint;
-    private CupController cupControllerCup;
-    private Player player;
+
     Scanner scanner = new Scanner(System.in);
 
     private PointController pointController = new PointController();
