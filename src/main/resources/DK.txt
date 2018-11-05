@@ -42,3 +42,28 @@ field11name
 Hullet
 field12name
 Guldminen
+
+---- field Description ----
+
+field2description
+Du har fundet skat på toppen af tårnet og sælger det for 250!
+field3description
+Du undgik lige akkurat selv at falde i krateret, men tabte 100 guld.
+field4description
+Du plyndre et palas, og værdierne får du solgt for 100 guld.
+field5description
+Din rejse har ført dig ud til en is ørken, en ørkenboer viser dig ud for 20 guld.
+field6description
+Du ser kommer forbi en byen med en kæmpe mur, du får 180 guld somgave og forsætter din rejse.
+field7description
+Du finder et klostre, men de var plyndret for nyeligt og har ikke mere guld.
+field8description
+du tager ly i en mørk grotte, men du opdager spøgelse og løber ud så hurtigtdu kan. Du taber 70 guld i hasten.
+field9description
+du finder det orginale bjerg folk, og plyndre dem for alle deresværdier. du går vidre med 60 guld mere og et smil på læben.
+field10description
+du går op til en kæmpemur, men pluselig bliver du jagtet af 4 hunde ligende skikkelser, du taber 80 guld men er allerede på vej et nyt sted hen.
+field11description
+du finder et hul og vælger at lege på kanten af det, desværre får du over balance og taber 50 guld mønter ned i huldet.
+field12description
+Du fandt en masse guld gravere i en guldrig mine, og stjæler alt det de har samlet sammen. du forlader dem grædene mens du fløjter og har 650 guld mere.
