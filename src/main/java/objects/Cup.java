@@ -6,7 +6,6 @@ public class Cup {
     ----------- Fields -----------
      */
     private int cupValue;
-
     private Die[] dies;
 
     /*
@@ -28,7 +27,8 @@ public class Cup {
     }
 
     /**
-     * Alternative constructor, which creates a cup with "amountOfDies" dies of "dieSides" sides.
+     * Alternative constructor, which creates a cup with "amountOfDies"
+     * dies of "dieSides" sides.
      * @param amountOfDies int
      * @param dieSides int
      */
@@ -48,8 +48,8 @@ public class Cup {
      */
 
     /**
-     *
-     * @return
+     * This method rolls every die in the cup
+     * @return Returns the total value of the facevalues in the cup
      */
     public int cupRoll () {
 
@@ -77,13 +77,9 @@ public class Cup {
     --------- Variables accessible ----
      */
 
-    public Die[] getDies() {
-        return dies;
-    }
+    public Die[] getDies() { return dies; }
 
-    public void setDies(Die[] dies) {
-        this.dies = dies;
-    }
+    public void setDies(Die[] dies) { this.dies = dies; }
 
     public int getCupValue () {return cupValue;}
 
