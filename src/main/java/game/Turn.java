@@ -25,7 +25,7 @@ public class Turn {
         // Initialize object variable
 
         // Press to roll message printed and waiting for input
-        System.out.println(Reader.print("rollPress")+player.getName());
+        System.out.println(Reader.print("rollPress")+" "+player.getName());
         input=scanner.next();
 
         // Cup is rolled and result is assigned to rollValue
@@ -46,8 +46,10 @@ public class Turn {
 
         // Result of your turn is printed out.
         System.out.println(Reader.print("rolled") + " " + rollValue + Reader.print("landed") + " " + Reader.print(fieldName));
+        System.out.println();
         System.out.println(Reader.print(fieldDescription));
         System.out.println(Reader.print("totalScore") + " " + totalScore + Reader.print("pointName"));
+        System.out.println();
 
         // Check if totalScore is enough to win. If yes, players boolean hasWon is set to true.
         if (totalScore > Game.WINNINGPOINTS) {

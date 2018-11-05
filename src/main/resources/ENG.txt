@@ -11,6 +11,7 @@ Welcome to the adventurous country of Dutterland. Get ready to discover this mar
 congrats
 Congratulations
 theEnding
+Your are the WINNER and the riches man in Dutteerland!
 selectLanguage
 Select Language:
 selectedLanguage
