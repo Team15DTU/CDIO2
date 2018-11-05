@@ -35,20 +35,17 @@ public class Game {
 
         Turn turn = new Turn();
 
-        //Turns alternation
-            while (player1.getAccount().getBalance() < WINNINGPOINTS && player2.getAccount().getBalance() < WINNINGPOINTS) {
+            while (!player1.isHasWon() && !player2.isHasWon()) {
                 turn(player1, cup);
-                if (player1.getAccount().getBalance() < WINNINGPOINTS) {
+                if (!player1.isHasWon()) {
                     turn(player2, cup);
                 }
             }
 
-        //Announce winner
+
             if (player1.getAccount().getBalance() > player2.getAccount().getBalance()) {
                 System.out.println("Tillykke"+player1.getName());
-            }
+            } else
             System.out.println("Tillykke"+player2.getName());
-
     }
-
 }
