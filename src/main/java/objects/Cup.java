@@ -2,16 +2,26 @@ package objects;
 
 public class Cup {
 
+    /*
+    ----------- Fields -----------
+     */
     private int cupValue;
 
     private Die die1;
     private Die die2;
 
+    /*
+    ---------- Constructors -------
+     */
     public Cup () {
 
         die1 = new Die();
         die2 = new Die();
     }
+
+    /*
+    -------- Public Methods -------
+     */
 
     public int cupRoll () {
 
@@ -22,7 +32,13 @@ public class Cup {
         return cupValue;
     }
 
-    // Variables accessible
+    /*
+    --------- Support Methods ---------
+     */
+
+    /*
+    --------- Variables accessible ----
+     */
 
 
     public int getCupValue () {return cupValue;}
