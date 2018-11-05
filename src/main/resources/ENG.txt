@@ -3,6 +3,14 @@
 * Language: English
 
 ---- operations ----
+
+enterName
+Enter your name
+welcomeToGame
+Welcome to the adventurous country of Dutterland. Get ready to discover this marvelous country
+congrats
+Congratulations
+theEnding
 selectLanguage
 Select Language:
 selectedLanguage
@@ -16,11 +24,25 @@ The requested language is not support
 fileError
 Error: No language.txt file found
 
+---- Turn Lines -----
+
+rollPress
+Press r to raffle cup for
+rolled
+You rolled:
+landed
+ and landed on
+
+pointName
+ Gold
+totalScore
+Now you have a total of
+
 
 ---- field names ----
 
 field2name
-You
+Tower
 field3name
 Crater
 field4name
