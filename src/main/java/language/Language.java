@@ -2,15 +2,15 @@ package language;
 
 public class Language {
 
-    String languageCode;
-    String fileName;
+    static String languageCode;
+    static String fileName;
     int landCode;
 
     public Language() {
 
     }
 
-    public String languageSwitch (int landCode) {
+    public static String languageSwitch (int landCode) {
 
         switch (landCode) {
             case 1:
@@ -27,9 +27,7 @@ public class Language {
         return languageCode;
     }
 
-    public String fileSwitch (int landCode) {
-
-        this.landCode=landCode;
+    public static String fileSwitch (int landCode) {
 
         switch (landCode) {
             case 1:
@@ -45,15 +43,26 @@ public class Language {
         return fileName;
     }
 
-    public String getLanguageCode() {return languageCode;}
-    public void setLanguageCode(String languageCode) {this.languageCode = languageCode;}
+    public static String getLanguageCode() {
+        return languageCode;
+    }
 
-    public String getFileName() { return fileName;}
-    public void setFileName(String fileName) {this.fileName = fileName;}
+    public static void setLanguageCode(String languageCode) {
+        Language.languageCode = languageCode;
+    }
+
+    public static String getFileName() {
+        return fileName;
+    }
+
+    public static void setFileName(String fileName) {
+        Language.fileName = fileName;
+    }
 
     public int getLandCode() {
         return landCode;
     }
+
     public void setLandCode(int landCode) {
         this.landCode = landCode;
     }

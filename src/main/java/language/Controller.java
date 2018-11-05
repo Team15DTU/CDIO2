@@ -11,6 +11,13 @@ public class Controller {
 
     private static int input;
 
+    public Controller () {
+
+        fileName=Language.fileSwitch(input);
+        language=Language.languageSwitch(input);
+
+    }
+
     public static int selectorWindow() {
 
         Scanner scan = new Scanner(System.in);
@@ -21,27 +28,14 @@ public class Controller {
 
         input = scan.nextInt();
 
+        fileName = Language.fileSwitch(input);
+        language = Language.languageSwitch(input);
+        Reader.setSelectedLanguage(fileName);
+        System.out.println(Reader.print("selectedLanguage")+ " " + Reader.print(language));
+
         return input;
     }
 
-    public String language() {
-
-        language = land.languageSwitch(input);
-        return language;
-    }
-
-    public String fileName() {
-
-        fileName = land.fileSwitch(input);
-        return fileName;
-
-    }
-
-    public void languageUpdate() {
-
-        Reader.setSelectedLanguage(fileName());
-
-    }
 
     // Variables Setters and Getters
 
