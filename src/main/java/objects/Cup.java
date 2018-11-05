@@ -13,12 +13,13 @@ public class Cup {
         die2 = new Die();
     }
 
-    public void cupRoll () {
+    public int cupRoll () {
 
         die1.roll();
         die2.roll();
         int cupValue = die1.getFaceValue() + die2.getFaceValue();
         this.cupValue=cupValue;
+        return cupValue;
     }
 
     // Variables accessible

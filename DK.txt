@@ -1,0 +1,44 @@
+﻿---- LANGUAGE ----
+* FileName: DK.txt
+* Language: Danish
+
+---- operations ----
+
+selectLanguage
+Vælg Sprog
+selectedLanguage
+Valgt Sprog:
+ENG
+Engelsk
+DK
+Dansk
+languageError
+Det ønskede sporg understøttes ikke.
+fileError
+FEJL: Ingen language.txt blev fundet.
+
+
+---- field names ----
+
+field2name
+Tårnet
+field3name
+Krateret
+field4name
+Paladsets Port
+field5name
+Den Kolde Ørken
+field6name
+Den Murrede By
+field7name
+Klosteret
+field8name
+Den Sorte Grotte
+field9name
+Hytterne i bjergene
+field10name
+Varulvemuren
+field11name
+Hullet
+field12name
+Guldminen
