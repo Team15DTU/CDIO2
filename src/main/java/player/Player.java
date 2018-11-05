@@ -4,26 +4,82 @@ import game.Turn;
 
 public class Player {
 
-    // Fields
+    /*
+     --------- Fields ---------------
+      */
 
     private String name;
-    private int account;
-    private boolean hasWon=false;
+    private Account account;
+    private boolean hasWon = false;
 
-    // Constructor
+    /*
+     ------- Constructors ------------
+      */
 
-    public void updateScore(Turn turn1, Account account) {
+    /**
+     * Default constructor
+     */
+    public Player ( String name ) {
+        // Initialize
+        this.name = name;
+        account = new Account();
+    }
 
-        int turnpoint =turn1.getTurnPoint();
-
+    /**
+     * Alternative constructor
+     * @param name String
+     * @param initialBalance int
+     */
+    public Player ( String name, int initialBalance ) {
+        // Initialize
+        this.name = name;
+        account = new Account(initialBalance);
     }
 
 
-    // Variable accessible
+    /*
+    -------- Public Methods ----------
+     */
 
-    public int getAccount() {return account;}
-    public void setAccount(int account) {this.account = account;}
+    /**
+     * Updates the players account with the specified amount
+     * @param score The amount which is going to the account as an int
+     */
+    public void updateScore ( int score ) {
+        // Update the account associated with the player
+        account.update(score);
+    }
+
+    public void resetScore () {
+        // Set players account to 0
+        account.setBalance(0);
+    }
+
+    /*
+    ------- Support Methods ----------
+     */
 
 
+    /*
+     ------ Variable accessible ------
+      */
 
+    public Account getAccount()  { return account; }
+
+    public void setAccount(Account account) { this.account = account; }
+
+    public String getName() {
+        return name; }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public boolean isHasWon() {
+        return hasWon;
+    }
+
+    public void setHasWon(boolean hasWon) {
+        this.hasWon = hasWon;
+    }
 }
