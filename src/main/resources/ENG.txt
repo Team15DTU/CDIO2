@@ -41,3 +41,27 @@ field11name
 The Pit
 field12name
 Goldmine
+
+---- field description----
+field2description
+You found a treasure in the top of the tower and sell it for 250 gold!
+field3description
+You avoid barely to fall into the crater, but lost 100 gold.
+field4description
+You plunder a palace, and its value you sell for 100 gold.
+field5description
+Your journey led you to an ice desert, a desert villenger show you the way out for 20 gold.
+field6description
+You come across a city with giant walls, you recive 180 gold as a tribute to your journey.
+field7description
+You find a monastery, the monks been plundered and nothing left you can steal.
+field8description
+Your seeking shelter in a dark cave, but realize the cave is haunted and run out as fast as you can, losing 70 gold in the rush.
+field9description
+You come across the originale mountain people, and plunder them for all their valuables. You move on with 60 gold more and a little smile.
+field10description
+Your getting close to a giant wall, but suddenly your being chased by 4 humaniod dogs, you lost 80 gold in the run but is allready on your way to a new place.
+field11description
+you find a large pit and play around the edge, suddenly your falling down the pit but manage to catch the edge and push your self up, only losing 50 in the pit.
+field12description
+You found alot of gold diggers in a rich mine, you choice to steal what ever they have gathered. You leaving them crying while you whistles with 650 gold more in your pocket.
