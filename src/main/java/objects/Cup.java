@@ -77,6 +77,13 @@ public class Cup {
     --------- Variables accessible ----
      */
 
+    public Die[] getDies() {
+        return dies;
+    }
+
+    public void setDies(Die[] dies) {
+        this.dies = dies;
+    }
 
     public int getCupValue () {return cupValue;}
 
