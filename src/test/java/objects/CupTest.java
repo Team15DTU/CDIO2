@@ -40,6 +40,15 @@ public class CupTest {
 
     @Test
     public void getCupValue() {
+
+        // Roll the cups and put result into "roll" and "roll12"
+        int roll = cup.cupRoll();
+        int roll12 = cup12.cupRoll();
+
+        // Check the methods
+        assertEquals(roll, cup.getCupValue());
+        assertEquals(roll12, cup12.getCupValue());
+
     }
 
     @Test
