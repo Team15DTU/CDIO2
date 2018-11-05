@@ -53,5 +53,14 @@ public class CupTest {
 
     @Test
     public void setCupValue() {
+
+        // Set the "cupValue" to 6 in both cups
+        cup.setCupValue(6);
+        cup12.setCupValue(6);
+
+        // Check both cups
+        assertEquals(6, cup.getCupValue());
+        assertEquals(6, cup12.getCupValue());
+
     }
 }
