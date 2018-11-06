@@ -1,6 +1,5 @@
 package game;
 
-import language.Reader;
 import player.Player;
 
 public class PointController {

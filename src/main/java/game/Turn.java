@@ -1,7 +1,6 @@
 package game;
 
 import language.Reader;
-import objects.CupController;
 import player.Player;
 import objects.Cup;
 
