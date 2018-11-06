@@ -7,11 +7,11 @@
 enterName
 Indtast dit navn
 welcomeToGame
-Velkommen til det eventyrlig land, Dutterland. Gør dig klar til at gå på opdagelse i dette forunderlige land.
+Velkommen til det eventyrlige land, Dutterland. Gør dig klar til at gå på opdagelse i dette forunderlige land.
 congrats
 Tillykke
 theEnding
-Du er VINDEREN og den rigeste ridder i Dutterland.
+Du er VINDEREN og dermed den rigeste ridder i Dutterland.
 selectLanguage
 Vælg Sprog
 selectedLanguage
