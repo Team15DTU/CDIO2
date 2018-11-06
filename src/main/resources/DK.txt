@@ -28,11 +28,11 @@ FEJL: Ingen language.txt blev fundet.
 ---- Turn Lines -----
 
 rollPress
-Tryk på r for at rafle med bægeret 
+Tryk på r for at rafle med bægeret
 rolled
 Du slog:
 landed
- og landte på 
+ og landte på
 pointName
  Guld
 totalScore
