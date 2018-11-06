@@ -1,7 +1,5 @@
 package objects;
 
-import objects.Cup;
-
 public class CupController {
 
     // Fields
@@ -20,6 +18,6 @@ public class CupController {
 
     public int getCupRoll () {return cupRoll;}
 
-    // public void setCupRoll (int cupRoll) {this.cupRoll=cupRoll;}
+    public void setCupRoll (int cupRoll) {this.cupRoll=cupRoll;}
 
 }
