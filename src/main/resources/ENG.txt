@@ -33,7 +33,6 @@ rolled
 You rolled:
 landed
  and landed on
-
 pointName
  Gold
 totalScore

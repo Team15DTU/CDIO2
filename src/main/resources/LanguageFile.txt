@@ -3,6 +3,15 @@
 * Language: 
 
 ---- operations ----
+
+enterName
+
+welcomeToGame
+
+congrats
+
+theEnding
+
 selectLanguage
 
 selectedLanguage
@@ -15,6 +24,18 @@ languageError
 
 fileError
 
+
+---- Turn Lines -----
+
+rollPress
+
+rolled
+
+landed
+
+pointName
+
+totalScore
 
 
 ---- field names ----
