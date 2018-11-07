@@ -7,11 +7,11 @@
 enterName
 Indtast dit navn
 welcomeToGame
-Velkommen til det eventyrlig land, Dutterland. Gør dig klar til at gå på opdagelse i dette forunderlige land.
+Velkommen til det eventyrlige land, Dutterland. Gør dig klar til at gå på opdagelse i dette forunderlige land.
 congrats
 Tillykke
 theEnding
-Du er VINDEREN og den rigeste ridder i Dutterland.
+Du er VINDEREN og dermed den rigeste ridder i Dutterland.
 selectLanguage
 Vælg Sprog
 selectedLanguage
@@ -28,11 +28,11 @@ FEJL: Ingen language.txt blev fundet.
 ---- Turn Lines -----
 
 rollPress
-Tryk på r for at rafle med bægeret 
+Tryk på r for at rafle med bægeret
 rolled
 Du slog:
 landed
- og landte på 
+ og landte på
 pointName
  Guld
 totalScore
@@ -67,24 +67,24 @@ Guldminen
 ---- field Description ----
 
 field2description
-Du har fundet skat på toppen af tårnet og sælger det for 250!
+Du har fundet en skat på toppen af tårnet og sælger den for 250.
 field3description
 Du undgik lige akkurat selv at falde i krateret, men tabte 100 guld.
 field4description
-Du plyndre et palas, og værdierne får du solgt for 100 guld.
+Du plyndre et palads, og værdierne får du solgt for 100 guld.
 field5description
 Din rejse har ført dig ud til en is ørken, en ørkenboer viser dig ud for 20 guld.
 field6description
-Du ser kommer forbi en byen med en kæmpe mur, du får 180 guld somgave og forsætter din rejse.
+Du ser kommer forbi en byen med en kæmpe mur, du får 180 guld som gave og fortsætter din rejse.
 field7description
-Du finder et klostre, men de var plyndret for nyeligt og har ikke mere guld.
+Du finder et kloster, men de var plyndret for nyeligt, og har ikke mere guld.
 field8description
-du tager ly i en mørk grotte, men du opdager spøgelse og løber ud så hurtigtdu kan. Du taber 70 guld i hasten.
+Du tager ly i en mørk grotte, men pludselig støder du på et spøgelse, og flygter så hurtigt du kan. Du taber 70 guld i hasten.
 field9description
-du finder det orginale bjerg folk, og plyndre dem for alle deresværdier. du går vidre med 60 guld mere og et smil på læben.
+Du finder det originale bjergfolk, og plyndre dem for alle deres værdier. Du går videre med 60 guld mere og et smil på læben.
 field10description
-du går op til en kæmpemur, men pluselig bliver du jagtet af 4 hunde ligende skikkelser, du taber 80 guld men er allerede på vej et nyt sted hen.
+Du går op til en kæmpe mur, men pludselig bliver du jagtet af 4 hunde ligende skikkelser! Du taber 80 guld, men er allerede på vej et nyt sted hen.
 field11description
-du finder et hul og vælger at lege på kanten af det, desværre får du over balance og taber 50 guld mønter ned i huldet.
+Du finder et hul, og vælger at lege på kanten af det. Desværre får du over balance, og taber 50 guldmønter ned i hullet.
 field12description
-Du fandt en masse guld gravere i en guldrig mine, og stjæler alt det de har samlet sammen. du forlader dem grædene mens du fløjter og har 650 guld mere.
+Du fandt en masse guldgravere i en guldmine, og stjæler alt det de har samlet sammen. Du forlader dem grædene, mens du fløjter og har 650 guld mere.
