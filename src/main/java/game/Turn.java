@@ -25,7 +25,12 @@ public class Turn {
 
         // Press to roll message printed and waiting for input
         System.out.println(Reader.print("rollPress")+" "+player.getName());
-        input=scanner.next();
+        input=scanner.nextLine();
+
+        // teksten "exit" eller "sluk" afslutter spillet
+        if (input.equals(Reader.print("exit"))) {
+            System.exit(666);
+        }
 
         // Cup is rolled and result is assigned to rollValue
         cup.cupRoll();

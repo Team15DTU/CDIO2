@@ -4,8 +4,16 @@
 
 ---- operations ----
 
+player1
+ player 1:
+player2
+ player 2:
 enterName
-Enter your name
+Enter name for
+hi
+Hey
+hiPlayer
+, welcome to DutterLand. You have been granted a total of
 welcomeToGame
 Welcome to the adventurous country of Dutterland. Get ready to discover this marvelous country
 congrats
@@ -24,11 +32,13 @@ languageError
 The requested language is not support
 fileError
 Error: No language.txt file found
+exit
+exit
 
 ---- Turn Lines -----
 
 rollPress
-Press r to raffle cup for
+Press "enter" to raffle cup for
 rolled
 You rolled:
 landed
