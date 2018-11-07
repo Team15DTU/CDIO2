@@ -10,6 +10,10 @@ player2
  spiller 2:
 enterName
 Indtast navn for
+hi
+Hej
+hiPlayer
+, velkommen til Dutterland. Du er blevet tildelt
 welcomeToGame
 Velkommen til det eventyrlige land, Dutterland. Gør dig klar til at gå på opdagelse i dette forunderlige land.
 congrats
@@ -28,11 +32,13 @@ languageError
 Det ønskede sporg understøttes ikke.
 fileError
 FEJL: Ingen language.txt blev fundet.
+exit
+sluk
 
 ---- Turn Lines -----
 
 rollPress
-Tryk på r for at rafle med bægeret
+Tryk "enter" for at rafle med bægeret
 rolled
 Du slog:
 landed

@@ -5,7 +5,6 @@ import language.Reader;
 import objects.Cup;
 import player.Player;
 
-import javax.print.DocFlavor;
 import java.util.Scanner;
 
 /**
@@ -27,10 +26,17 @@ public class Game {
         System.out.println(Reader.print("enterName") + Reader.print("player1"));
         String navn = scanner.next();
         Player player1 = new Player(navn, STARTPOINT);
+        String player1Name = player1.getName();
+        System.out.print(Reader.print("hi") + " " + player1Name + Reader.print("hiPlayer"));
+        System.out.println(" " + STARTPOINT + Reader.print("pointName"));
 
         System.out.println(Reader.print("enterName") + Reader.print("player2"));
         navn = scanner.next();
         Player player2 = new Player(navn, STARTPOINT);
+        String player2Name = player1.getName();
+        System.out.print(Reader.print("hi") + " " + player2Name + Reader.print("hiPlayer"));
+        System.out.println(" " + STARTPOINT + Reader.print("pointName"));
+        System.out.println();
 
         System.out.println(Reader.print("welcomeToGame"));
 
