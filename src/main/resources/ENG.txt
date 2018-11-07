@@ -4,8 +4,12 @@
 
 ---- operations ----
 
+player1
+ player 1:
+player2
+ player 2:
 enterName
-Enter your name
+Enter name for
 welcomeToGame
 Welcome to the adventurous country of Dutterland. Get ready to discover this marvelous country
 congrats

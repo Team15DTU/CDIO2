@@ -4,8 +4,12 @@
 
 ---- operations ----
 
+player1
+ spiller 1:
+player2
+ spiller 2:
 enterName
-Indtast dit navn
+Indtast navn for
 welcomeToGame
 Velkommen til det eventyrlige land, Dutterland. Gør dig klar til at gå på opdagelse i dette forunderlige land.
 congrats
