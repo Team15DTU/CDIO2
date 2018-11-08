@@ -17,15 +17,19 @@ public class PlayerTest {
 
         Player player1 = new Player("test",STARTINGSCORE);
         player1.updateScore(EXTRAPOINT);
+
         assertEquals( STARTINGSCORE+EXTRAPOINT, player1.getAccount().getBalance() );
 
     }
 
     @Test
     public void resetScore() {
+
         final int STARTINGSCORE=1000;
+
         Player player1 = new Player("test",STARTINGSCORE);
         player1.resetScore();
+
         assertEquals( 0, player1.getAccount().getBalance() );
     }
 
@@ -33,8 +37,13 @@ public class PlayerTest {
     public void getAccount() {
 
         final int STARTINGSCORE=1000;
-        Player player1 = new Player("test",STARTINGSCORE);
-        assertEquals(STARTINGSCORE,player1.getAccount());
+
+        Player player1 = new Player("test", STARTINGSCORE);
+
+        Account acc = new Account();
+        player1.setAccount(acc);
+
+        assertEquals( acc, player1.getAccount() );
 
     }
 
