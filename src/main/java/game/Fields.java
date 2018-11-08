@@ -2,8 +2,15 @@ package game;
 
 public class Fields {
 
+    /*
+    ----------- Fields -----------
+    */
+
     private static String fieldName, fieldDescription;
 
+    /*
+    -------- Public Methods -------
+    */
 
     public static void fieldsSwitch (int cupRoll) {
 
@@ -60,21 +67,17 @@ public class Fields {
 
     }
 
-    public static String getFieldName() {
-        return fieldName;
-    }
+    /*
+    --------- Variables accessible ----
+     */
 
-    public static void setFieldName(String fieldName) {
-        Fields.fieldName = fieldName;
-    }
+    public static String getFieldName() {return fieldName;}
 
-    public static String getFieldDescription() {
-        return fieldDescription;
-    }
+    public static void setFieldName(String fieldName) {Fields.fieldName = fieldName;}
 
-    public static void setFieldDescription(String fieldDescription) {
-        Fields.fieldDescription = fieldDescription;
-    }
+    public static String getFieldDescription() {return fieldDescription;}
+
+    public static void setFieldDescription(String fieldDescription) {Fields.fieldDescription = fieldDescription;}
 
 }
 
