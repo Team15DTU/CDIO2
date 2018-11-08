@@ -4,19 +4,36 @@ import java.util.Scanner;
 
 public class Controller {
 
-    Language land = new Language();
+    /*
+    ----------- Fields -----------
+     */
 
     private static String fileName;
     private static String language;
 
     private static int input;
 
+    /*
+    ---------- Constructors -------
+     */
+
     public Controller () {
 
-        fileName=Language.fileSwitch(input);
-        language=Language.languageSwitch(input);
+        Language.languageSwitch(input);
+
+        fileName=Language.getFileName();
+        language=Language.getLanguageCode();
 
     }
+
+    /*
+    -------- Public Methods -------
+     */
+
+    /**
+     * This method asks the user about preferred language and sets it up.
+     * @return input from user which is used in setting up language.
+     */
 
     public static int selectorWindow() {
 
@@ -28,45 +45,30 @@ public class Controller {
 
         input = scan.nextInt();
 
-        fileName = Language.fileSwitch(input);
-        language = Language.languageSwitch(input);
+        Language.languageSwitch(input);
+
+        fileName = Language.getFileName();
+        language = Language.getLanguageCode();
         Reader.setSelectedLanguage(fileName);
         System.out.println(Reader.print("selectedLanguage")+ " " + Reader.print(language));
 
         return input;
     }
 
-
-    // Variables Setters and Getters
+    /*
+    --------- Variables accessible ----
+     */
 
     public String getFileName(){return fileName;}
 
-    public void setFileName(String fileName) {
-        this.fileName = fileName;
-    }
+    public void setFileName(String fileName) {this.fileName = fileName;}
 
-    public Language getLand() {
-        return land;
-    }
+    public static int getInput() {return input;}
 
-    public void setLand(Language land) {
-        this.land = land;
-    }
+    public static void setInput(int input) {Controller.input = input;}
 
-    public static int getInput() {
-        return input;
-    }
+    public static String getLanguage() {return language;}
 
-    public static void setInput(int input) {
-        Controller.input = input;
-    }
-
-    public static String getLanguage() {
-        return language;
-    }
-
-    public static void setLanguage(String language) {
-        Controller.language = language;
-    }
+    public static void setLanguage(String language) {Controller.language = language;}
 
 }
