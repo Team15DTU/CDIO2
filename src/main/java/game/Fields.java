@@ -11,6 +11,9 @@ public class Fields {
     /*
     -------- Public Methods -------
     */
+    /**
+     * This method sets the matching name and description for the field matching the value of a cupRoll.
+     */
 
     public static void fieldsSwitch (int cupRoll) {
 
