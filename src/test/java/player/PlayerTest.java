@@ -17,7 +17,7 @@ public class PlayerTest {
 
         Player player1 = new Player("test",STARTINGSCORE);
         player1.updateScore(EXTRAPOINT);
-        assertEquals(STARTINGSCORE+EXTRAPOINT,player1.getAccount());
+        assertEquals( STARTINGSCORE+EXTRAPOINT, player1.getAccount().getBalance() );
 
     }
 
@@ -26,7 +26,7 @@ public class PlayerTest {
         final int STARTINGSCORE=1000;
         Player player1 = new Player("test",STARTINGSCORE);
         player1.resetScore();
-        assertEquals(0,player1.getAccount().getBalance());
+        assertEquals( 0, player1.getAccount().getBalance() );
     }
 
     @Test
