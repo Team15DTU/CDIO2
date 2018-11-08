@@ -10,10 +10,10 @@ import java.util.Scanner;
 /**
  * @author Karl Emil Jeppesen
  * StudyID: s180557
- * Date: 04-11-2018
+ * Date: 08-11-2018
  * University: DTU
  */
-public class Game {
+public class GameStub extends Game {
 
     Scanner scanner = new Scanner(System.in);
 
@@ -22,7 +22,7 @@ public class Game {
     static String navn = "noname";
 
     public void launch () {
-        Controller.selectorWindow();
+        //Controller.selectorWindow();
 
         System.out.println(Reader.print("enterName") + Reader.print("player1"));
         navn = scanner.next();
@@ -31,6 +31,7 @@ public class Game {
         System.out.print(Reader.print("hi") + " " + player1Name + Reader.print("hiPlayer"));
         System.out.println(" " + STARTPOINT + Reader.print("pointName"));
 
+        /*
         System.out.println(Reader.print("enterName") + Reader.print("player2"));
         navn = scanner.next();
         Player player2 = new Player(navn, STARTPOINT);
@@ -46,20 +47,21 @@ public class Game {
         // turn needs to only take in player and cup
         Turn GameTurn = new Turn();
 
-            while (!player1.isHasWon() && !player2.isHasWon()) {
-                GameTurn.turn(player1, cup);
-                if (!player1.isHasWon()) {
-                    GameTurn.turn(player2, cup);
-                }
+        while (!player1.isHasWon() && !player2.isHasWon()) {
+            GameTurn.turn(player1, cup);
+            if (!player1.isHasWon()) {
+                GameTurn.turn(player2, cup);
             }
+        }
 
 
-            if (player1.getAccount().getBalance() > player2.getAccount().getBalance()) {
-                System.out.println(Reader.print("congrats") + " " +player1.getName());
-                System.out.print(Reader.print("theEnding"));
-            } else {
-                System.out.println(Reader.print("congrats") + " " + player2.getName());
-                System.out.print(Reader.print("theEnding"));
-            }
+        if (player1.getAccount().getBalance() > player2.getAccount().getBalance()) {
+            System.out.println(Reader.print("congrats") + " " +player1.getName());
+            System.out.print(Reader.print("theEnding"));
+        } else {
+            System.out.println(Reader.print("congrats") + " " + player2.getName());
+            System.out.print(Reader.print("theEnding"));
+        }
+        */
     }
 }
