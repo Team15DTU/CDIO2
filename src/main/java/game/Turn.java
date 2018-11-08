@@ -40,7 +40,7 @@ public class Turn {
         turnPoint=pointSwitch(rollValue);
 
         // turnPoint is added to the players current balance and the new balance is assigned to totalScore
-        PointController.add(player,turnPoint);
+        player.updateScore(turnPoint);
         totalScore=player.getAccount().getBalance();
 
         // Name and Description of the rollValue is assigned to fieldName and fieldDescription
