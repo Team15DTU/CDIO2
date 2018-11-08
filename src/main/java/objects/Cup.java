@@ -26,6 +26,8 @@ public class Cup {
         }
 
         /*
+        foreach loop that apparently doesn't work
+
         for (Die die : dies) {
 
             die = new Die();
@@ -45,9 +47,19 @@ public class Cup {
         dies = new Die[amountOfDies];
 
         // Fill the array with the specified amount of dies
+        for ( int i=0 ; i < dies.length ; i++ ) {
+            dies[i] = new Die();
+        }
+
+        /*
+        foreach loop that apparently doesn't work
+
+        // Fill the array with the specified amount of dies
         for (Die die : dies) {
             die = new Die(dieSides);
         }
+
+        */
     }
 
     /*
