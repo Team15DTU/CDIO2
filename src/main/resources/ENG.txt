@@ -11,25 +11,25 @@ player2
 enterName
 Enter name for
 hi
-Hey
+Hi
 hiPlayer
-, welcome to DutterLand. You have been granted a total of
+, welcome to Dutterland. You have been granted a total of
 welcomeToGame
 Welcome to the adventurous country of Dutterland. Get ready to discover this marvelous country
 congrats
 Congratulations
 theEnding
-Your are the WINNER and the riches man in Dutteerland!
+Your are the WINNER and the richest man in Dutterland!
 selectLanguage
-Select Language:
+Select language:
 selectedLanguage
-Your selected:
+You selected:
 ENG
 English
 DK
 Danish
 languageError
-The requested language is not support
+The requested language is not supported
 fileError
 Error: No language.txt file found
 exit
