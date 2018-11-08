@@ -80,10 +80,12 @@ public class PlayerTest {
     @Test
     public void isHasWon() {
 
-        final int STARTINGSCORE=9999;
-        final String NAME = "test";
+        final int STARTINGSCORE = 9999;
+        final String NAME       = "test";
+
         Player player1 = new Player(NAME,STARTINGSCORE);
-        assertEquals(true,player1.isHasWon());
+
+        assertEquals(false,player1.isHasWon());
 
     }
 
