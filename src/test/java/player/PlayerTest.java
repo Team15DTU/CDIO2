@@ -49,12 +49,13 @@ public class PlayerTest {
 
     @Test
     public void setAccount() {
-        final int STARTINGSCORE=1000;
-        final int SETTEDSCORE = 9999;
-        Player player1 = new Player("test",STARTINGSCORE);
-        Account account = new Account(SETTEDSCORE);
-        player1.setAccount(account);
-        assertEquals(SETTEDSCORE,player1.getAccount());
+
+        Player player1 = new Player("test");
+
+        Account acc = new Account();
+        player1.setAccount(acc);
+
+        assertEquals( acc, player1.getAccount() );
     }
 
     @Test
