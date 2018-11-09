@@ -47,8 +47,13 @@ public class Account {
 
         // Check if account is negative
         if (balance < 0) {
-            balance = 0;
+            resetBalance();
         }
+    }
+
+    public void resetBalance () {
+        // Reset the balance
+        balance = 0;
     }
 }
 
