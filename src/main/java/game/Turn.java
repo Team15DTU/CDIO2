@@ -68,28 +68,4 @@ public class Turn {
 
     }
 
-    /*
-    ------------ Properties ------------
-    */
-
-    public int getRollValue() {return rollValue;}
-
-    public void setRollValue(int rollValue) {this.rollValue = rollValue;}
-
-    public int getTurnPoint() {return turnPoint;}
-
-    public void setTurnPoint(int turnPoint) {this.turnPoint = turnPoint;}
-
-    public int getTotalScore() {return totalScore;}
-
-    public void setTotalScore(int totalScore) {this.totalScore = totalScore;}
-
-    public String getFieldName() {return fieldName;}
-
-    public void setFieldName(String fieldName) {this.fieldName = fieldName;}
-
-    public String getFieldDescription() {return fieldDescription;}
-
-    public void setFieldDescription(String fieldDescription) {this.fieldDescription = fieldDescription;}
-
 }
