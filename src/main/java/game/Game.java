@@ -15,10 +15,21 @@ import java.util.Scanner;
  */
 public class Game {
 
+    /*
+    ----------- Fields -----------
+    */
+
     Scanner scanner = new Scanner(System.in);
 
     final static int STARTPOINT = 1000;
     final static int WINNINGPOINTS = 3000;
+
+    /*
+    -------- Public Methods -------
+     */
+    /**
+     * This method runs the game with all logic and rules from the beginning till the announcing of the winner.
+     */
 
     public void launch () {
         Controller.selectorWindow();
@@ -33,7 +44,7 @@ public class Game {
         System.out.println(Reader.print("enterName") + Reader.print("player2"));
         navn = scanner.nextLine();
         Player player2 = new Player(navn, STARTPOINT);
-        String player2Name = player1.getName();
+        String player2Name = player2.getName();
         System.out.print(Reader.print("hi") + " " + player2Name + Reader.print("hiPlayer"));
         System.out.println(" " + STARTPOINT + Reader.print("pointName"));
         System.out.println();
@@ -61,4 +72,8 @@ public class Game {
                 System.out.print(Reader.print("theEnding"));
             }
     }
+
+    public static int getSTARTPOINT() {return STARTPOINT;}
+
+    public static int getWINNINGPOINTS() {return WINNINGPOINTS;}
 }

@@ -6,7 +6,22 @@ import java.io.IOException;
 
 public class Reader {
 
+
+    /*
+    ----------- Fields -----------
+     */
+
     static String selectedLanguage = "ENG.txt";
+
+    /*
+    -------- Public Methods -------
+     */
+
+    /**
+     * This methods looks for textlabels in our languageFiles and retours the text of that label.
+     * @param field
+     * @return
+     */
 
     public static String print(String field) {
 
@@ -30,12 +45,12 @@ public class Reader {
         return result;
     }
 
-    public static String getSelectedLanguage() {
-        return selectedLanguage;
-    }
+    /*
+    --------- Variables accessible ----
+     */
 
-    public static void setSelectedLanguage(String selectedLanguage) {
-        Reader.selectedLanguage = selectedLanguage;
-    }
+    public static String getSelectedLanguage() {return selectedLanguage;}
+
+    public static void setSelectedLanguage(String selectedLanguage) {Reader.selectedLanguage = selectedLanguage;    }
 
 }
