@@ -8,7 +8,9 @@ import java.util.Scanner;
 
 public class Turn {
 
-    // Fields
+    /*
+    ------------ Fields ------------------
+    */
 
     private int rollValue, turnPoint, totalScore;
     private String fieldName, fieldDescription;
@@ -17,15 +19,16 @@ public class Turn {
 
     Scanner scanner = new Scanner(System.in);
 
-    // Constructor
+    /*
+    --------- Public Methods ----------
+    */
 
-
-    public void turn (Player player, Cup cup) {
+    public void turn(Player player, Cup cup) {
         // Initialize object variable
 
         // Press to roll message printed and waiting for input
-        System.out.println(Reader.print("rollPress")+" "+player.getName());
-        input=scanner.nextLine();
+        System.out.println(Reader.print("rollPress") + " " + player.getName());
+        input = scanner.nextLine();
 
         // teksten "exit" eller "sluk" afslutter spillet
         if (input.equals(Reader.print("exit"))) {
@@ -34,17 +37,17 @@ public class Turn {
 
         // Cup is rolled and result is assigned to rollValue
         cup.cupRoll();
-        rollValue=cup.getCupValue();
+        rollValue = cup.getCupValue();
 
         // rollValue input into fieldsSwitch and assigning fieldPoint, fieldName and fieldDescription
         Fields.fieldsSwitch(rollValue);
-        turnPoint=Fields.getFieldPoint();
+        turnPoint = Fields.getFieldPoint();
         fieldName = Fields.getFieldName();
         fieldDescription = Fields.getFieldDescription();
 
         // turnPoint is added to the players current balance and the new balance is assigned to totalScore
         player.updateScore(turnPoint);
-        totalScore=player.getAccount().getBalance();
+        totalScore = player.getAccount().getBalance();
 
         // Result of your turn is printed out.
         System.out.println(Reader.print("rolled") + " " + rollValue + Reader.print("landed") + " " + Reader.print(fieldName));
@@ -60,15 +63,33 @@ public class Turn {
 
         // If rollValue is equal to 10 you get an extra turn
         if (rollValue == 10) {
-            turn(player,cup);
+            turn(player, cup);
         }
 
     }
 
-    // Variables accessible
+    /*
+    ------------ Properties ------------
+    */
 
     public int getRollValue() {return rollValue;}
 
-    public int getTurnPoint () {return turnPoint;}
+    public void setRollValue(int rollValue) {this.rollValue = rollValue;}
+
+    public int getTurnPoint() {return turnPoint;}
+
+    public void setTurnPoint(int turnPoint) {this.turnPoint = turnPoint;}
+
+    public int getTotalScore() {return totalScore;}
+
+    public void setTotalScore(int totalScore) {this.totalScore = totalScore;}
+
+    public String getFieldName() {return fieldName;}
+
+    public void setFieldName(String fieldName) {this.fieldName = fieldName;}
+
+    public String getFieldDescription() {return fieldDescription;}
+
+    public void setFieldDescription(String fieldDescription) {this.fieldDescription = fieldDescription;}
 
 }

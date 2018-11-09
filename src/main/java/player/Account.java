@@ -2,14 +2,15 @@ package player;
 
 public class Account {
 
+
     /*
-     ------------ Fields ------------------
-      */
+    ------------ Fields ------------------
+    */
     private int balance;
 
     /*
     ----------- Constructors --------------
-     */
+    */
 
     /**
      * Primary Constructor
@@ -29,7 +30,7 @@ public class Account {
 
     /*
     ------------ Properties ------------
-     */
+    */
 
     public int getBalance () { return balance; }
 
@@ -38,8 +39,8 @@ public class Account {
     }
 
     /*
-     --------- Public Methods ----------
-      */
+    --------- Public Methods ----------
+    */
 
     public void update(int points) {
         // update points to balance
