@@ -42,7 +42,7 @@ Tryk "enter" for at rafle med bægeret
 rolled
 Du slog:
 landed
- og landte på
+ og landede på
 pointName
  Guld
 totalScore
@@ -81,20 +81,20 @@ Du har fundet en skat på toppen af tårnet og sælger den for 250.
 field3description
 Du undgik lige akkurat selv at falde i krateret, men tabte 100 guld.
 field4description
-Du plyndre et palads, og værdierne får du solgt for 100 guld.
+Du plyndrer et palads, og værdierne får du solgt for 100 guld.
 field5description
-Din rejse har ført dig ud til en is ørken, en ørkenboer viser dig ud for 20 guld.
+Din rejse har ført dig ud til en is-ørken, en ørkenboerne viser dig ud for 20 guld.
 field6description
-Du ser kommer forbi en byen med en kæmpe mur, du får 180 guld som gave og fortsætter din rejse.
+Du kommer forbi en by med en kæmpe mur, du får 180 guld som gave og fortsætter din rejse.
 field7description
-Du finder et kloster, men de var plyndret for nyeligt, og har ikke mere guld.
+Du finder et kloster, men de var plyndret for nyligt og har ikke mere guld.
 field8description
-Du tager ly i en mørk grotte, men pludselig støder du på et spøgelse, og flygter så hurtigt du kan. Du taber 70 guld i hasten.
+Du søger ly i en mørk grotte, men pludselig støder du på et spøgelse, og flygter så hurtigt du kan. Du taber 70 guld i hasten.
 field9description
-Du finder det originale bjergfolk, og plyndre dem for alle deres værdier. Du går videre med 60 guld mere og et smil på læben.
+Du finder det originale bjergfolk, og plyndrer dem for alle deres værdier. Du går videre med 60 guld mere og et smil på læben.
 field10description
-Du går op til en kæmpe mur, men pludselig bliver du jagtet af 4 hunde ligende skikkelser! Du taber 80 guld, men er allerede på vej et nyt sted hen.
+Du går op til en kæmpe mur, men pludselig bliver du jagtet af fire hunde ligende skikkelser! Du taber 80 guld, men er allerede på vej et nyt sted hen.
 field11description
-Du finder et hul, og vælger at lege på kanten af det. Desværre får du over balance, og taber 50 guldmønter ned i hullet.
+Du finder et hul, og vælger at lege på kanten af det. Desværre får du overbalance, og taber 50 guldmønter ned i hullet.
 field12description
-Du fandt en masse guldgravere i en guldmine, og stjæler alt det de har samlet sammen. Du forlader dem grædene, mens du fløjter og har 650 guld mere.
+Du fandt en masse guldgravere i en guldmine, og stjæler deres formue. Du forlader dem grædene, mens du fløjter og er 650 guld rigere.

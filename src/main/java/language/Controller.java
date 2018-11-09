@@ -8,8 +8,6 @@ public class Controller {
     ----------- Fields -----------
      */
 
-    Language land = new Language();
-
     private static String fileName;
     private static String language;
 
@@ -21,8 +19,10 @@ public class Controller {
 
     public Controller () {
 
-        fileName=Language.fileSwitch(input);
-        language=Language.languageSwitch(input);
+        Language.languageSwitch(input);
+
+        fileName=Language.getFileName();
+        language=Language.getLanguageCode();
 
     }
 
@@ -45,8 +45,10 @@ public class Controller {
 
         input = scan.nextInt();
 
-        fileName = Language.fileSwitch(input);
-        language = Language.languageSwitch(input);
+        Language.languageSwitch(input);
+
+        fileName = Language.getFileName();
+        language = Language.getLanguageCode();
         Reader.setSelectedLanguage(fileName);
         System.out.println(Reader.print("selectedLanguage")+ " " + Reader.print(language));
 
@@ -60,10 +62,6 @@ public class Controller {
     public String getFileName(){return fileName;}
 
     public void setFileName(String fileName) {this.fileName = fileName;}
-
-    public Language getLand() {return land;}
-
-    public void setLand(Language land) {this.land = land;}
 
     public static int getInput() {return input;}
 
