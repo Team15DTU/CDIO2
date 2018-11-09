@@ -1,6 +1,5 @@
 package player;
 
-import game.PointController;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -38,10 +37,9 @@ public class AccountTest {
     public void noNegative() {
 
         Player player = new Player("jens");
-        PointController pc = new PointController();
 
         player.getAccount().setBalance(0);
-        pc.add(player,-250);
+        player.updateScore(-250);
 
         assertEquals(0,player.getAccount().getBalance());
     }
